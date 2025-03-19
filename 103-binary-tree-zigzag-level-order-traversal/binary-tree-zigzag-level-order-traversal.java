@@ -44,6 +44,7 @@ class Solution {
                     q.offer(currentNode.right);
                 } 
             } 
+            
             result.add(currentLevel);
             leftToRight = !leftToRight;
         }
