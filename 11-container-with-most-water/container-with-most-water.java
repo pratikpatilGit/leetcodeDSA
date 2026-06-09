@@ -5,9 +5,9 @@ class Solution {
         int right = height.length - 1;
 
         while (left < right) {
-            int width = right - left; 
-            int currentHeight = Math.min(height[left], height[right]);
-            int currentWater = currentHeight * width;
+            // int width = right - left; 
+            // int currentHeight = Math.min(height[left], height[right]);
+            int currentWater = Math.min(height[left], height[right]) * (right - left);
 
             maxWater = Math.max(maxWater, currentWater);
 
